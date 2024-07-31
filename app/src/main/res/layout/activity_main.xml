@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/guoCheng"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:ellipsize="start"
+            android:gravity="right|bottom"
+            android:textSize="40sp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/jieGuo"
+            android:maxLines="1"
+            android:ellipsize="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right|bottom"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1f000000"
+            >
+
+        </View>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/white">
+
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/zuoKuoHao"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/zuoKuoHao"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/youKuoHao"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/youKuoHao"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/genHao"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/genHao"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/x2"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/x2"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/AC"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/ac"
+            android:textSize="25dp">
+
+        </Button>
+        <ImageButton
+            android:id="@+id/shanChu"
+            android:src="@drawable/sanchu"
+            android:scaleType="centerCrop"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@color/white"
+
+            >
+
+        </ImageButton>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/zhengFu"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/zhengFu"
+            android:textSize="25dp"
+            >
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/divideButton"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/chu"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/seven"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_7"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/eight"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_8"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/nine"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_9"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/multiplyButton"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/multiply"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/four"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_4"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/five"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_5"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/six"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_6"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/subtractButton"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/subtract"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/one"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_1"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/two"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_2"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/three"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_3"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="#00eeee"
+            android:id="@+id/addButton"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/add"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/percentage"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/percentage"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/zero"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/_0"
+            android:textSize="25dp">
+
+        </Button>
+        <Button
+            android:background="#00ffffff"
+            android:textColor="@color/black"
+            android:id="@+id/decimalPoint"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/decimalPoint"
+            android:textSize="25dp"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/amount"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/amount"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            >
+
+        </Button>
+
+
+    </GridLayout>
+
+
+</LinearLayout>
